@@ -1,4 +1,5 @@
 import { ButtonRed } from "../../components/button-red";
+import { ButtonWhite } from "../../components/button-white";
 import { TextInput } from "../../components/text-input";
 
 import * as S from "./style";
