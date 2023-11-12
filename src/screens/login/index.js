@@ -9,7 +9,7 @@ export const LoginScreen = () => {
       <S.Title marginBottom={55}>Nova Conta</S.Title>
       <TextInput marginBottom={35} placeholder="Nome do utilizador" />
       <TextInput secureTextEntry={true} placeholder="Palavra-passe" />
-      <ButtonRed marginTop={55} title="Criar" />
+      <ButtonRed marginTop={55} title="Entrar" />
     </S.Container>
   );
 };
