@@ -5,13 +5,21 @@ import logo from "../../assets/icon.png";
 
 import * as S from "./style";
 
-export const HomeScreen = () => {
+export const HomeScreen = ({ navigation }) => {
   return (
     <S.Container>
       <S.Logo resizeMode="contain" source={logo} />
       <S.Title marginTop={40}>PS Fotos</S.Title>
-      <ButtonRed marginTop={100} title="Entrar" />
-      <ButtonWhite marginTop={30} title="Criar Conta" />
+      <ButtonRed
+        title="Entrar"
+        marginTop={100}
+        onPress={() => navigation.navigate("Login")}
+      />
+      <ButtonWhite
+        marginTop={30}
+        title="Criar Conta"
+        onPress={() => navigation.navigate("SignUp")}
+      />
     </S.Container>
   );
 };

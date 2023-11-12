@@ -1,5 +1,5 @@
 import { StatusBar } from "expo-status-bar";
-import { RootRoute } from "./src/routes";
+import { RootRoute } from "./src/routes/root.routes";
 import { Provider } from "react-redux";
 import { store } from "./src/redux/store";
 import { View } from "react-native";

@@ -5,6 +5,7 @@ export const Container = styled.View`
   padding: 32px;
   align-items: center;
   padding-top: 75px;
+  background-color: #fff;
 `;
 
 export const Title = styled.Text`
@@ -21,4 +22,8 @@ export const Row = styled.View`
 
 export const Gap = styled.View`
   width: 15px;
+`;
+
+export const GrowView = styled.View`
+  flex: 1;
 `;

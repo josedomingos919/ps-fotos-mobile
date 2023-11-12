@@ -2,9 +2,14 @@ import { ActivityIndicator } from "react-native";
 
 import * as S from "./styles";
 
-export const ButtonDark = ({ title, marginTop, isLoading = false }) => {
+export const ButtonDark = ({
+  title,
+  marginTop,
+  isLoading = false,
+  ...restProps
+}) => {
   return (
-    <S.Container marginTop={marginTop} disabled={isLoading}>
+    <S.Container {...restProps} marginTop={marginTop} disabled={isLoading}>
       <S.RedContainer>
         {isLoading ? (
           <ActivityIndicator color="black" size="small" />
