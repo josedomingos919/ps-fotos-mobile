@@ -15,4 +15,18 @@ async function login(
   }
 }
 
-export const auth = { login };
+async function register({ nome, password, sessionId }) {
+  try {
+    const response = await axiosInstance.post("utilizador", {
+      nome,
+      password,
+      sessionId,
+    });
+
+    return response;
+  } catch (error) {
+    return error?.response;
+  }
+}
+
+export const auth = { login, register };
