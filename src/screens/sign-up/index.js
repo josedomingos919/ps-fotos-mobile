@@ -20,12 +20,6 @@ export const SignUpScreen = ({ navigation }) => {
       sessionId: new Date().getTime().toString(),
     });
 
-    console.log("teste", response, {
-      nome: username,
-      password: password,
-      sessionId: new Date().getTime().toString(),
-    });
-
     setIsLoading(false);
 
     if (response?.status == 201) {

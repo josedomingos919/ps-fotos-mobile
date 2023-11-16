@@ -1,13 +1,11 @@
 import { axiosInstance } from "../../api/axios";
 
-async function login(
-  data = {
-    username: "",
-    password: "",
-  }
-) {
+async function login({ nome, password }) {
   try {
-    const response = await axiosInstance.post("login", data);
+    const response = await axiosInstance.post("utilizador/login", {
+      nome,
+      password,
+    });
 
     return response;
   } catch (error) {
