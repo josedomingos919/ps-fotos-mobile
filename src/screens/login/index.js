@@ -23,6 +23,8 @@ export const LoginScreen = ({ navigation }) => {
       password: password,
     });
 
+    console.log({ response });
+
     setIsLoading(false);
 
     if (response?.status == 201) {
@@ -49,7 +51,12 @@ export const LoginScreen = ({ navigation }) => {
         placeholder="Palavra-passe"
         onChangeText={(value) => setPassword(value)}
       />
-      <ButtonRed marginTop={55} title="Entrar" onPress={() => handleLogin()} />
+      <ButtonRed
+        isLoading={isLoading}
+        marginTop={55}
+        title="Entrar"
+        onPress={() => handleLogin()}
+      />
     </S.Container>
   );
 };

@@ -5,6 +5,7 @@ import { LoginScreen } from "../screens/login";
 import { SignUpScreen } from "../screens/sign-up";
 import { MyAlbumScreen } from "../screens/my-album";
 import { useSelector } from "react-redux";
+import { AddAlbumScreen } from "../screens/add-album";
 
 const Stack = createNativeStackNavigator();
 
@@ -35,6 +36,7 @@ export function RootRoute() {
           initialRouteName="Home"
         >
           <Stack.Screen name="MyAlbum" component={MyAlbumScreen} />
+          <Stack.Screen name="AddAlbum" component={AddAlbumScreen} />
         </Stack.Navigator>
       )}
     </NavigationContainer>
